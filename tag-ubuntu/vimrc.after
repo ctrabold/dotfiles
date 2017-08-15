@@ -1,0 +1,8 @@
+let g:solarized_termcolors=16
+let g:NERDTreeWinSize = 40
+
+set t_Co=16
+set showtabline=2
+
+syntax enable
+filetype plugin indent on
