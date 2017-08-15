@@ -1,0 +1,19 @@
+# ack
+--type-add=ruby=.slim,.haml,.rake,.ru,.palette
+--type-add=html=.html.slim,.html.erb,.html.haml,.mustache,.jst
+--type-add=js=.coffee,.js.erb
+--type-add=css=.sass,.less,.scss
+--type-add=groovy=.gradle
+--type-add=html=.ftl
+--type-set=markdown=.markdown,.md
+--type-set=cucumber=.feature
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=doc
+--ignore-dir=coverage
+--sort-files
+--color
+--follow
+--group
+--context=3

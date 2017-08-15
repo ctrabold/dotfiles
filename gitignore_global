@@ -1,0 +1,8 @@
+*.gem
+*~
+.buildpath
+.bundle
+.DS_Store
+.project
+.settings
+pkg/*

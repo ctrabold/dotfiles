@@ -1,0 +1,20 @@
+# Configure environment
+#
+# @see https://github.com/aziz/tmuxinator#create-a-project
+
+name: development
+root: ~/
+#pre: sudo /etc/rc.d/mysqld start
+pre_window: rbenv shell 2.0.0-p247 # Runs in each tab and pane
+#tmux_options: -v -2 # Pass arguments to tmux
+windows:
+  - chef-repo:
+      layout: main-horizontal
+      panes:
+        - cd chef-repo-typo3 && vim . && clear
+        - cd chef-repo-typo3 && clear
+  - workspace:
+      layout: main-horizontal
+      panes:
+        - cd workspace && vim . && clear
+        - cd workspace && clear

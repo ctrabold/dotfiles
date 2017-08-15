@@ -1,0 +1,11 @@
+[alias]
+  standup = "log --since yesterday --author 'Christian Trabold'"
+  report = "log --author='Christian Trabold' --since='1 monday ago' --until='now' --format='%Cgreen%ci%Creset %s%Creset' --no-merges"
+  report-all = "log --author='Christian Trabold' --until='now' --format='%Cgreen%ci%Creset %s%Creset' --no-merges"
+  wc = !sh -c 'git log @{u}.. --oneline | wc -l'
+[github]
+  user=ctrabold
+[user]
+  name = Christian Trabold
+  email = info@christian-trabold.de
+  signingkey = 9295890A

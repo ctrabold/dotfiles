@@ -1,0 +1,4 @@
+EXCLUDES="bin README.md LICENSE test tmuxinator zsh"
+DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
+TAGS="ubuntu"
+SYMLINK_DIRS="atom vim janus rbenv oh-my-zsh"
