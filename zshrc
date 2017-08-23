@@ -91,15 +91,6 @@ setopt no_hist_beep
 setopt hist_save_no_dups
 
 
-# Functions
-# @see https://www.calazan.com/docker-cleanup-commands/
-function docker-cleanup () {
-  # Delete all stopped containers (including data-only containers)
-  docker rm "$(docker ps -a -q)"
-  # Delete all 'untagged/dangling' (<none>) images
-  docker rmi "$(docker images -q -f dangling=true)"
-}
-
 # Local config
 eval "$(rbenv init -)"
 
