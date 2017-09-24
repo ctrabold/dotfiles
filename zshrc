@@ -55,6 +55,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sb
 export PATH=/usr/local/share/npm/bin:$PATH
 export GOPATH=$HOME/workspace/golang
 export PATH=$GOPATH/bin:/usr/local/opt/go/libexec/bin:$PATH
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin/":$PATH
 
 
 # Shell config
