@@ -40,7 +40,7 @@ export VIM_APP_DIR='/usr/bin/vim'
 MY_ZSH_PLUGINS="autojump bundler docker extract git-extras gitfast golang gradle jira mix tmux tmuxinator vagrant"
 
 if [[ $OSTYPE == darwin* ]]; then
-  MY_ZSH_PLUGINS="${MY_ZSH_PLUGINS} brew osx"
+  MY_ZSH_PLUGINS="${MY_ZSH_PLUGINS} osx"
 fi
 
 plugins=(`echo ${MY_ZSH_PLUGINS}`)
