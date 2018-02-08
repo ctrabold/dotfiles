@@ -127,9 +127,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Set a custom wallpaper image. `DefaultDesktop.jpg` is already a symlink, and
 # all wallpapers are in `/Library/Desktop Pictures/`. The default is `Wave.jpg`.
-sudo rm -rf ~/Library/Application Support/Dock/desktoppicture.db
-sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
-sudo ln -nfs "/Library/Desktop Pictures/Solid Colors/Solid Aqua Graphite.png" /System/Library/CoreServices/DefaultDesktop.jpg
+osascript -e 'tell application "Finder"' -e 'set theFile to POSIX file "/Library/Desktop Pictures/Solid Colors/Solid Aqua Graphite.png"' -e 'set desktop picture to (theFile as alias)' -e 'end tell'
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
