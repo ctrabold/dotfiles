@@ -3,6 +3,7 @@
 #
 # Inspired by https://mths.be/macos
 # @see https://www.defaults-write.com/
+# @see https://github.com/herrbischoff/awesome-macos-command-line
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
