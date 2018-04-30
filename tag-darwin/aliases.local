@@ -1,4 +1,0 @@
-# DNS
-# OS X 10.9 Mavericks
-# alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
-alias flushdns='sudo killall -HUP mDNSResponder'
