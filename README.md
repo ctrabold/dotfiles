@@ -9,7 +9,8 @@ Plus atom packages and MacOS settings to setup my workstation quickly.
 # Requirements
 
 - [zsh](http://www.zsh.org/)
-- [`rcm`](http://thoughtbot.github.io/rcm/)
+- [zaw](https://github.com/zsh-users/zaw)
+- [rcm](http://thoughtbot.github.io/rcm/)
 
 ## Mac OS X
 
@@ -34,11 +35,15 @@ Plus atom packages and MacOS settings to setup my workstation quickly.
 
 # Usage
 
-- Set zsh as your login shell
+- Set `zsh` as your login shell
 
     chsh -s $(which zsh)
 
-- Clone repo to your HOME folder
+- Clone `zaw` repo to your HOME folder
+
+    git clone git://github.com/zsh-users/zaw.git $HOME/zaw
+
+- Clone `dotfiles` repo to your HOME folder
 
     git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
     ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
