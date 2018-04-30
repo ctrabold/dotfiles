@@ -1,4 +1,4 @@
-EXCLUDES="bin README.md LICENSE test tmuxinator zsh"
+EXCLUDES="LICENSE README.md atom-package-list.txt release.sh bin test zsh iterm"
 DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
-TAGS="ubuntu"
-SYMLINK_DIRS="atom vim janus rbenv oh-my-zsh"
+TAGS="darwin"
+SYMLINK_DIRS=""
