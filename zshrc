@@ -17,6 +17,7 @@ ZSH_THEME="avit"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   autojump
+  colorize
   extract
   git
   sublime
