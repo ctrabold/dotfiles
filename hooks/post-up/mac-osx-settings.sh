@@ -1,9 +1,15 @@
-#!/usr/bin/env bash
-# Configures MacOS system & application settings
+#!/bin/bash
+# Configures macOS system & application settings
 #
 # Inspired by https://mths.be/macos
-# @see https://www.defaults-write.com/
-# @see https://github.com/herrbischoff/awesome-macos-command-line
+#
+# TODO ct 16-02-2018
+# - use dark menue bar and dock
+# - automatically hide and show the menu bar
+#
+# REFERENCES
+# - https://www.defaults-write.com/
+# - https://github.com/herrbischoff/awesome-macos-command-line
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
