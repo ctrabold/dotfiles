@@ -14,9 +14,10 @@ Plus atom packages and MacOS settings to setup my workstation quickly.
 ## Mac OS X
 
 - [Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation)
-
+<pre>
     brew tap thoughtbot/formulae
     brew install rcm zsh
+</pre>
 
 ## Ubuntu
 
@@ -31,46 +32,43 @@ Plus atom packages and MacOS settings to setup my workstation quickly.
 </pre>
 
 
-# Install
+# Usage
 
-Set zsh as your login shell:
+- Set zsh as your login shell
 
     chsh -s $(which zsh)
 
-Clone onto your laptop:
+- Clone repo to your HOME folder
 
-    cd
-    git clone git://github.com/ctrabold/dotfiles.git
-    ln -s dotfiles/rcrc .rcrc
+    git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
+    ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
 
+This creates a symlink to the `rcrc` config file which excludes
+files that should not be symlinked for example.
 
-## Install
+- Test the setup with this command
 
-### Mac OSX:
+    lsrc
 
-    rcup -v -t darwin
+- If you're happy with the result let's create symlinks for each dotfile!
 
-### Ubuntu:
+macOS: `rcup -v -t darwin`
+Ubuntu: `rcup -v -t ubuntu`
 
-    rcup -v -t ubuntu
+This will create symlinks for each dotfile into your home directory.
 
-This will create symlinks for config files in your home directory. The `ln -s dotfiles/rcrc .rcrc`
-command only creates a symlink for the `rcrc` file, which excludes the `README.md`, `LICENSE` and `Brewfile` files, that should not be symlinked.
-We then run `rcup` again to create symlinks on all the files but with exclude patterns within `.rcrc`.
-
-Make sure you use the `ubuntu` tag when executing this on Ubuntu machines!
-
-You can then safely run `rcup` multiple times to update:
-
-    rcup -t ubuntu
+You can safely run this command multiple times to update
+the symlinks e.g. if you add custom dofiles to the `dotfiles` folder.
 
 
-# What's in it?
+# FAQ
+
+## What's in it?
 
 [git](http://git-scm.com/) configuration:
 
 * Ignores a global set of files through `~/.gitignore_global`
-* Sets a bunch of `aliases` in ~/.gitconfig`
+* Sets a bunch of `aliases` in `~/.gitconfig`
 
 [Ruby](https://www.ruby-lang.org/en/) configuration:
 
@@ -78,7 +76,7 @@ You can then safely run `rcup` multiple times to update:
 
 Shell aliases and scripts:
 
-* see `~/.aliases`
+* see `~/dotfiles/zsh/aliases.zsh`
 
 [tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
 
@@ -91,7 +89,7 @@ Shell aliases and scripts:
 * `let mapleader = ","`
 
 
-# Make your own customizations
+## How to customize the setup?
 
 Put your customizations in dotfiles appended with `.local`:
 
@@ -124,12 +122,11 @@ You can also override the files by storing them inside the `dotfiles-local` fold
 
 Just use the same filenames as in the `dotfiles` folder to override the default files with your files.
 
-
-# Install atom packages
+## How to install atom packages from the file?
 
     apm install --packages-file atom-package-list.txt
 
-# Generate atom package list
+## How to generate the atom package list?
 
     apm list --installed --bare > atom-package-list.txt
 
