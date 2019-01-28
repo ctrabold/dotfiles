@@ -2,6 +2,10 @@
 # @see http://en.wikipedia.org/wiki/PATH_%28variable%29
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
+if [ -x /usr/libexec/path_helper ]; then
+  eval `/usr/libexec/path_helper -s`
+fi
+
 export ZSH=$HOME/.oh-my-zsh
 
 DEFAULT_USER=$USER
