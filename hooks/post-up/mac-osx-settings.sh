@@ -14,7 +14,7 @@ if [[ $OSTYPE == darwin* ]]; then
   echo "INFO Setup macOS..."
 else
   echo "WARN No Mac OS detected. Exiting..."
- exit 1
+  exit 1
 fi
 
 # Close any open System Preferences panes, to prevent them from overriding
