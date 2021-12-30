@@ -24,7 +24,6 @@ plugins=(
   colorize
   extract
   git
-  sublime
 )
 
 source $ZSH/oh-my-zsh.sh
