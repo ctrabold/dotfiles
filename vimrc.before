@@ -1,7 +1,0 @@
-"http://statico.github.io/vim.html
-let mapleader = ","
-:nmap \l :setlocal number!<CR>
-imap ,t <Esc>:tabnew<CR>
-call janus#disable_plugin('arduino', "I don't use this plugin")
-call janus#disable_plugin('csv', "I don't use this plugin")
-call janus#disable_plugin('nerdcommenter')
