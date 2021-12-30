@@ -54,3 +54,5 @@
   required = true
 [grep]
 	lineNumber = true
+[init]
+	defaultBranch = main
