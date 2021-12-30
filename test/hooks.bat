@@ -14,7 +14,7 @@ load test_helper
 #
 
 @test "Writes Mac OS X settings only on Mac OS X" {
-  run ./hooks/post-up/mac-osx-settings.sh
+  OSTYPE="example" run ./hooks/post-up/mac-osx-settings.sh
   [ "$status" -eq 1 ]
   echo "$output" | grep "No Mac OS detected"
 }
