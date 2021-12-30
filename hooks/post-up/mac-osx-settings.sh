@@ -12,6 +12,8 @@
 # - https://github.com/herrbischoff/awesome-macos-command-line
 if [[ $OSTYPE == darwin* ]]; then
   echo "INFO Setup macOS..."
+  echo "Disabled until macOS 12.1 is fully supported."
+  exit 0
 else
   echo "WARN No Mac OS detected. Exiting..."
   exit 1
