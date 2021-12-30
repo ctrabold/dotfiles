@@ -7,7 +7,7 @@ to configure the command line environment as quickly as possible without fiddlin
 
 The installation is tested on macOS 12.1 and subject to change without prior notice. Use at your own risk :)
 
-[![Build Status](https://travis-ci.org/ctrabold/dotfiles.svg?branch=master)](https://travis-ci.org/ctrabold/dotfiles)
+[![Build Status](https://travis-ci.com/ctrabold/dotfiles.svg?branch=master)](https://travis-ci.com/ctrabold/dotfiles)
 
 ## Installation
 
