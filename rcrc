@@ -1,4 +1,4 @@
-EXCLUDES="LICENSE README.md release.sh bin test zsh iterm"
+EXCLUDES="Brewfile LICENSE README.md release.sh bin test zsh iterm"
 DOTFILES_DIRS="$HOME/dotfiles-local $HOME/dotfiles"
 TAGS="darwin"
 SYMLINK_DIRS=""
