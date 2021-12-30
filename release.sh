@@ -9,10 +9,11 @@
 echo "INFO installing bats to run tests."
 mkdir -p bin
 cd bin
-wget --quiet -N https://github.com/sstephenson/bats/archive/v0.4.0.zip -O v0.4.0.zip
-unzip -q -n v0.4.0.zip
-cp -R bats-0.4.0/bin/bats .
-ln -nfs bats-0.4.0/libexec/bats bats
+BATS_VERSION=1.5.0
+wget --quiet -N https://github.com/bats-core/bats-core/archive/refs/tags/v${BATS_VERSION}.zip -O bats-core.zip
+unzip -q -n bats-core.zip
+cp -R bats-${BATS_VERSION}/bin/bats .
+ln -nfs bats-${BATS_VERSION}/libexec/bats bats
 cd ..
 echo "INFO installing bats. DONE"
 
