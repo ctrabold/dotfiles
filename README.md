@@ -1,141 +1,118 @@
 # Overview
 
-A set of vim, zsh, git, and tmux configuration files.
+A set of opinionated configuration files for command line tools like vim, [zsh](http://www.zsh.org/), git etc.
 
-Plus atom packages and MacOS settings to setup my workstation quickly.
+It uses pragmatic approaches like [zaw](https://github.com/zsh-users/zaw), [rcm](http://thoughtbot.github.io/rcm/) or [SpaceVim](https://spacevim.org/)
+to configure the command line environment as quickly as possible without fiddling too much with nitty gritty implementation details.
+
+The installation is tested on macOS 12.1 and subject to change without prior notice. Use at your own risk :)
 
 [![Build Status](https://travis-ci.org/ctrabold/dotfiles.svg?branch=master)](https://travis-ci.org/ctrabold/dotfiles)
 
-# Requirements
+## Installation
 
-- [zsh](http://www.zsh.org/)
-- [zaw](https://github.com/zsh-users/zaw)
-- [rcm](http://thoughtbot.github.io/rcm/)
+- Clone the `dotfiles` repo to your HOME folder:
+```
+git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
+```
+- Install [Homebrew](https://docs.brew.sh/Installation):
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+- Install required tools:
+```
+brew bundle --no-lock --file $HOME/dotfiles/Brewfile
+```
+- Set `zsh` as your default login shell:
+```
+sudo chsh -s "$(command -v zsh)" "${USER}"
+```
+- Clone `zaw` repo to your HOME folder:
+```
+git clone git://github.com/zsh-users/zaw.git $HOME/zaw
+```
+- Link the symlink configuration file:
+```
+ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
+```
+- Verify the symlinks with this command: `lsrc`
 
-## Mac OS X
+This command lists all symlinks that are going to be created so you can review the setup before you apply the settings in the next step.
 
-- [Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation)
-<pre>
-    brew tap thoughtbot/formulae
-    brew install rcm zsh
-</pre>
+Once you're happy with the result go ahead and create the symlinks to each dotfile:
+```
+rcup -v
+```
+You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
 
-## Ubuntu
+## FAQ
 
-- [`rcm`](http://thoughtbot.github.io/rcm/)
-<pre>
-    wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.2-2_all.deb
-    sudo dpkg -i rcm_1.2.2-2_all.deb
-</pre>
-- `terminator` (optional)
-<pre>
-    apt-get install terminator
-</pre>
+### What's in it?
 
-
-# Usage
-
-- Set `zsh` as your login shell
-
-    chsh -s $(which zsh)
-
-- Clone `zaw` repo to your HOME folder
-
-    git clone git://github.com/zsh-users/zaw.git $HOME/zaw
-
-- Clone `dotfiles` repo to your HOME folder
-
-    git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
-    ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
-
-This creates a symlink to the `rcrc` config file which excludes
-files that should not be symlinked for example.
-
-- Test the setup with this command
-
-    lsrc
-
-- If you're happy with the result let's create symlinks for each dotfile!
-
-macOS: `rcup -v -t darwin`
-Ubuntu: `rcup -v -t ubuntu`
-
-This will create symlinks for each dotfile into your home directory.
-
-You can safely run this command multiple times to update
-the symlinks e.g. if you add custom dofiles to the `dotfiles` folder.
-
-
-# FAQ
-
-## What's in it?
-
-[git](http://git-scm.com/) configuration:
+#### [git](http://git-scm.com/) configuration and commit templates
 
 * Ignores a global set of files through `~/.gitignore_global`
 * Sets a bunch of `aliases` in `~/.gitconfig`
+* Best practise commit message in `~/.gitmessage`
 
-[Ruby](https://www.ruby-lang.org/en/) configuration:
+#### [Ruby](https://www.ruby-lang.org/en/) configuration
 
-* Never download documentation for Rubygems
+* Never download documentation for Rubygems to save space
 
-Shell aliases and scripts:
+#### Handy shell aliases and functions
 
-* see `~/dotfiles/zsh/aliases.zsh`
+* `~/dotfiles/zsh/aliases.zsh`
+* `~/dotfiles/zsh/functions.zsh`
 
-[tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
+#### [tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
 
 * The `tmux` config file is a modified version of from [the tmux book](http://media.pragprog.com/titles/bhtmux/code/workflows/tmux.conf).
 
-[vim](http://www.vim.org/) configuration:
+#### [vim](http://www.vim.org/) configuration:
 
-* My vim config is based on [janus](https://github.com/carlhuda/janus).
-* `colorscheme solarized`
-* `let mapleader = ","`
+* The vim config is based on [SpaceVim](https://spacevim.org/).
 
+## How do I customize the setup?
 
-## How to customize the setup?
-
-Put your customizations in dotfiles appended with `.local`:
+1. Override the files directly (not recommended because it makes it harder to pull changes from upstream due to potential merge conflicts).
+2. Create a folder named `dotfiles-local` and store your custom files there. These will overrule the files from the `dotfiles` folder.
+3. Create 'local' dotfiles with a `.local` file extension:
 
 * `~/.aliases.local`
 * `~/.gitconfig.local`
 * `~/.tmux.conf.local`
 * `~/.zshrc.local`
 
-For example, your `~/.aliases.local` might look like this:
+These files are included by the respective files. Be aware that not all files support `.local` files.
 
-    # Productivity
-    alias todo='$EDITOR ~/.todo'
+### Example
 
-Your `~/.gitconfig.local` might look like this:
+Say you want to add your own aliases to your shell environment.
 
-    [alias]
-      l = log --pretty=colored
-    [pretty]
-      colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
-    [user]
-      name = John Doe
-      email = john@example.com
-
+Instead of adding them to the 'core' file `zsh/aliases.zsh` I recommend to create a file called `~/.aliases.local` which might look like this:
+```
+alias todo='$EDITOR ~/.todo'
+```
+For `git` your `~/.gitconfig.local` might look like this:
+```
+[alias]
+    l = log --pretty=colored
+[pretty]
+    colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+    name = John Doe
+    email = john@example.com
+```
 Your `~/.zshrc.local` might look like this:
+```
+# recommended by brew doctor
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+```
+You can also override the core files completely or add your own by storing them inside the `dotfiles-local` folder.
 
-    # recommended by brew doctor
-    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+This instructs `rcup` to use _your_ files upon the next `rcup` run (see usage instructions above).
 
-You can also override the files by storing them inside the `dotfiles-local` folder.
-
-Just use the same filenames as in the `dotfiles` folder to override the default files with your files.
-
-## How to install atom packages from the file?
-
-    apm install --packages-file atom-package-list.txt
-
-## How to generate the atom package list?
-
-    apm list --installed --bare > atom-package-list.txt
-
-# Credits
+## Credits
 
 1. These files are heavily inspired by [thoughtbot, inc](http://thoughtbot.com/community). Thank you for your inspiring work!
 The initial versions were inspired by the awesome folks at [peepcode](https://peepcode.com/products/advanced-command-line).
