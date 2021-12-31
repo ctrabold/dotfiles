@@ -112,6 +112,19 @@ You can also override the core files completely or add your own by storing them 
 
 This instructs `rcup` to use _your_ files upon the next `rcup` run (see usage instructions above).
 
+## FAQ
+
+### How do I remove the unessecary apps in the default dock?
+
+To cleanup the dock I use the commandline tool `dockutil`:
+
+    brew install dockutil
+    dockutil --remove all
+
+This will remove all the default apps in the dock. Now I can add apps that I find useful.
+
+I personally store only a handful apps in the dock, because I use the search feature to open apps either with the built in Spotlight or 3rd party apps like [Alfred](https://www.alfredapp.com/).
+
 ## Credits
 
 1. These files are heavily inspired by [thoughtbot, inc](http://thoughtbot.com/community). Thank you for your inspiring work!
