@@ -125,6 +125,14 @@ This will remove all the default apps in the dock. Now I can add apps that I fin
 
 I personally store only a handful apps in the dock, because I use the search feature to open apps either with the built in Spotlight or 3rd party apps like [Alfred](https://www.alfredapp.com/).
 
+### How do I install apps on macOS?
+
+This command installs the common tools I use on a regular basis:
+
+    brew bundle --no-lock --file=dotfiles/tag-darwin/homebrew/Brewfile
+
+You can omit the `--no-lock` if the ENV variable `HOMEBREW_BUNDLE_NO_LOCK` is set.
+
 ## Credits
 
 1. These files are heavily inspired by [thoughtbot, inc](http://thoughtbot.com/community). Thank you for your inspiring work!
