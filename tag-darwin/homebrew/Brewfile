@@ -23,9 +23,9 @@ tap "thoughtbot/formulae"
 #brew "ruby-build"
 #brew "ruby-install"
 #brew "ruby"
-brew "rust"
 brew "java"
 brew "python"
+brew "rustup-init"
 
 # Brew infrastructure apps
 #brew "ansible-cmdb"
