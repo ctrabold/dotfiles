@@ -31,13 +31,15 @@ brew "scala"
 # Brew infrastructure apps
 #brew "ansible-cmdb"
 #brew "ansible"
-#brew "awscli"
 #brew "packer"
+brew "argocd"
+brew "awscli"
 brew "docker-compose"
+brew "helm"
 brew "kubernetes-cli"
 brew "minikube"
 brew "terraform"
-brew "helm"
+cask "google-cloud-sdk"
 
 # Brew developer apps
 brew "ack"
