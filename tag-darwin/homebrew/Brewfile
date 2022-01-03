@@ -26,6 +26,7 @@ tap "thoughtbot/formulae"
 brew "java"
 brew "python"
 brew "rustup-init"
+brew "scala"
 
 # Brew infrastructure apps
 #brew "ansible-cmdb"
