@@ -141,6 +141,14 @@ It is described here: https://github.com/nvm-sh/nvm#git-install
 
 After that install the node version(s) you desire: `nvm install 12`
 
+### How do I setup the Java environment?
+
+Use SDKMan and follow the installation step:
+
+    curl -s "https://get.sdkman.io" | bash
+
+Then head over to their wiki to read up on the installation steps for each Java tool: https://sdkman.io/usage
+
 ## Credits
 
 1. These files are heavily inspired by [thoughtbot, inc](http://thoughtbot.com/community). Thank you for your inspiring work!
