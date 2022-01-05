@@ -1,7 +1,3 @@
-if [[ $OSTYPE == darwin* ]]; then
-  export JAVA_HOME=$(/usr/libexec/java_home);
-else
-  export JAVA_HOME="/usr/bin/java";
-fi
-
-export PATH="$HOME/.jenv/bin:$PATH"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
