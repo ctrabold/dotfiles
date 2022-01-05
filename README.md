@@ -133,6 +133,14 @@ This command installs the common tools I use on a regular basis:
 
 You can omit the `--no-lock` if the ENV variable `HOMEBREW_BUNDLE_NO_LOCK` is set.
 
+### How do I use a Node Package manager?
+
+The git setup of NVM provides the most straightforward solution in my opinion.
+
+It is described here: https://github.com/nvm-sh/nvm#git-install
+
+After that install the node version(s) you desire: `nvm install 12`
+
 ## Credits
 
 1. These files are heavily inspired by [thoughtbot, inc](http://thoughtbot.com/community). Thank you for your inspiring work!
