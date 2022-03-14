@@ -117,10 +117,10 @@ This instructs `rcup` to use _your_ files upon the next `rcup` run (see usage in
 ### How do I remove the unessecary apps in the default dock?
 
 To cleanup the dock I use the commandline tool `dockutil`:
-
-    brew install dockutil
-    dockutil --remove all
-
+```
+brew install dockutil
+dockutil --remove all
+```
 This will remove all the default apps in the dock. Now I can add apps that I find useful.
 
 I personally store only a handful apps in the dock, because I use the search feature to open apps either with the built in Spotlight or 3rd party apps like [Alfred](https://www.alfredapp.com/).
@@ -128,9 +128,9 @@ I personally store only a handful apps in the dock, because I use the search fea
 ### How do I install apps on macOS?
 
 This command installs the common tools I use on a regular basis:
-
-    brew bundle --no-lock --file=~/dotfiles/tag-darwin/homebrew/Brewfile
-
+```
+brew bundle --no-lock --file=~/dotfiles/tag-darwin/homebrew/Brewfile
+```
 You can omit the `--no-lock` if the ENV variable `HOMEBREW_BUNDLE_NO_LOCK` is set.
 
 ### How do I use a Node Package manager?
@@ -144,9 +144,9 @@ After that install the node version(s) you desire: `nvm install 12`
 ### How do I setup the Java environment?
 
 Use SDKMan and follow the installation step:
-
-    curl -s "https://get.sdkman.io" | bash
-
+```
+curl -s "https://get.sdkman.io" | bash
+```
 Then head over to their wiki to read up on the installation steps for each Java tool: https://sdkman.io/usage
 
 ## Credits
