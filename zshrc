@@ -24,6 +24,8 @@ plugins=(
   colorize
   extract
   git
+  kubectl
+  kube-ps1
 )
 
 source $ZSH/oh-my-zsh.sh
