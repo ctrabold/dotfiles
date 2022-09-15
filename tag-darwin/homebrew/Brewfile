@@ -48,6 +48,8 @@ brew "bfg"
 brew "dependency-check"
 brew "diffoscope"
 brew "doxygen"
+# @see https://the.exa.website/
+brew "exa"
 brew "exercism"
 brew "git-extras"
 brew "git-lfs"
