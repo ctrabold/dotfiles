@@ -41,6 +41,8 @@ cask "google-cloud-sdk"
 
 # Brew developer apps
 brew "ack"
+# @see https://github.com/sharkdp/bat
+brew "bat"
 brew "bats-core"
 brew "bfg"
 brew "dependency-check"

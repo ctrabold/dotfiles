@@ -13,5 +13,8 @@ alias gl='git l'
 alias ruby='ruby -W0'
 alias rake='noglob rake'
 
+# @see https://github.com/sharkdp/bat#automatic-paging
+alias cat='bat --paging=never'
+
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
