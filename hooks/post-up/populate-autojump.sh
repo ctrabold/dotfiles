@@ -5,4 +5,4 @@
 # USAGE
 #
 # j project-name
-find $HOME/workspace -maxdepth 1 -exec autojump --add "{}" \;
+find $HOME/workspace -type d -maxdepth 1 -exec autojump --add "{}" \;
