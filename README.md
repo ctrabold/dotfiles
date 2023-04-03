@@ -44,6 +44,8 @@ Once you're happy with the result go ahead and create the symlinks to each dotfi
 rcup -v
 ```
 You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
+- (optional): Install Oh-My-ZSH: https://ohmyz.sh/#install
+- (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
 
 ## FAQ
 
