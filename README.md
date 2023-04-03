@@ -29,7 +29,7 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 ```
 - Clone `zaw` repo to your HOME folder:
 ```
-git clone git://github.com/zsh-users/zaw.git $HOME/zaw
+git clone https://github.com/zsh-users/zaw.git $HOME/zaw
 ```
 - Link the symlink configuration file:
 ```
