@@ -35,7 +35,7 @@
 [status]
   submodule = 1
 [core]
-  editor = vim
+  editor = vim -X
   excludesfile = ~/.gitignore_global
   autocrlf = input
   fileMode = true
