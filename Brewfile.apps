@@ -1,0 +1,14 @@
+brew 'tig'
+brew 'dockutil'
+cask 'alfred'
+cask 'charles'
+cask 'camtasia'
+cask 'dash'
+cask 'dropbox'
+cask 'google-chrome'
+cask 'visual-studio-code'
+
+# K8
+brew 'colima'
+brew 'docker'
+brew 'kubectl'
