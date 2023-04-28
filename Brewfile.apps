@@ -1,11 +1,14 @@
 brew 'tig'
 brew 'dockutil'
 cask 'alfred'
+cask 'appcleaner'
 cask 'charles'
 cask 'camtasia'
 cask 'dash'
 cask 'dropbox'
 cask 'google-chrome'
+cask 'obsidian'
+cask 'readwise-ibooks'
 cask 'visual-studio-code'
 
 # K8
