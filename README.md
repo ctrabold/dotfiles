@@ -46,6 +46,10 @@ rcup -v
 You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
 - (optional): Install Oh-My-ZSH: https://ohmyz.sh/#install
 - (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
+- (optional): install additional apps: 
+```
+brew bundle --no-lock --file $HOME/dotfiles/Brewfile.apps
+```
 
 ## FAQ
 
