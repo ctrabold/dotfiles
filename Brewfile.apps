@@ -1,4 +1,5 @@
 brew 'dockutil'
+brew 'rbenv'
 brew 'tig'
 cask 'alfred'
 cask 'appcleaner'
