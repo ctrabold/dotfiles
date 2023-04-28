@@ -50,6 +50,20 @@ You can safely run this command multiple times to update the symlinks e.g. if yo
 ```
 brew bundle --no-lock --file $HOME/dotfiles/Brewfile.apps
 ```
+- (optional): Create a dedicated SSH key for work:
+```
+ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key
+```
+- (optional): Use the work key on certain work directory by adjusting `~/gitconfig.local`:
+```
+vi ~/gitconfig.local
+
+[includeIf "gitdir:~/workspace/customer"]
+   [user]
+       email = "work_email@example.com"
+   [core]
+       sshCommand = "ssh -i ~/.ssh/work_key"
+```
 
 ## FAQ
 
