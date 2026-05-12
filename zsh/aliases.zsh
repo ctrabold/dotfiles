@@ -15,6 +15,7 @@ alias rake='noglob rake'
 
 # @see https://github.com/sharkdp/bat#automatic-paging
 alias cat='bat --paging=never'
+alias tree='tree --gitignore'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
