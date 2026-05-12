@@ -149,9 +149,8 @@ I personally store only a handful apps in the dock, because I use the search fea
 
 This command installs the common tools I use on a regular basis:
 ```
-brew bundle --no-lock --file=~/dotfiles/tag-darwin/homebrew/Brewfile
+brew bundle --file=~/dotfiles/tag-darwin/homebrew/Brewfile
 ```
-You can omit the `--no-lock` if the ENV variable `HOMEBREW_BUNDLE_NO_LOCK` is set.
 
 ### How do I use a Node Package manager?
 
