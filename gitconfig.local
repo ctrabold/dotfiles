@@ -7,3 +7,23 @@
   name = Christian Trabold
   email = christian.trabold+codes@gmail.com
   signingkey = 9295890A
+
+# @see https://difftastic.wilfred.me.uk/git.html#regular-usage
+#[diff]
+#        tool = difftastic
+
+#[difftool]
+#        prompt = false
+
+#[difftool "difftastic"]
+#        cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+        difftool = true
+
+[alias]
+        dlog = -c diff.external=difft log -p --ext-diff
+
+# @see https://difftastic.wilfred.me.uk/git.html#difftastic-by-default
+#[diff]
+#        external = difft
