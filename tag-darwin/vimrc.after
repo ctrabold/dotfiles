@@ -1,10 +1,13 @@
 let g:solarized_termcolors=16
 let g:NERDTreeWinSize = 40
 
-set t_Co=16
+"set t_Co=16
 set showtabline=2
+set background=dark
 
-colorscheme solarized
+"colorscheme solarized
+"colorscheme solarized8
+colorscheme solarized8_flat
 syntax enable
 filetype plugin indent on
 
