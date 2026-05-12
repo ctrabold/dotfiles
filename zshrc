@@ -45,3 +45,6 @@ export ARCHFLAGS="-arch x86_64"
 [[ -f $HOME/.travis/travis.sh ]] && source $HOME/.travis/travis.sh
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 [[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# added by Snowflake SnowSQL installer v1.2
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
