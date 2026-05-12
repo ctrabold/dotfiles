@@ -1,18 +1,34 @@
-brew 'dockutil'
-brew 'rbenv'
-brew 'tig'
-cask 'alfred'
-cask 'appcleaner'
-cask 'camtasia'
-cask 'charles'
-cask 'dash'
-cask 'dropbox'
-cask 'google-chrome'
-cask 'obsidian'
-cask 'readwise-ibooks'
-cask 'visual-studio-code'
+brew 'dive' # investigate docker images
+brew 'dockutil' # reset  mac doc on new (factory) installations
+brew 'rbenv' # ruby environment manager
+brew 'tig' # CLI git browser
+cask 'alfred' # Power Search Bar
+cask 'appcleaner' # remove apps for good
+cask 'camtasia' # record screencasts
+cask 'charles' # HTTP Proxy tool
+cask 'dash' # API docs browser
+cask 'dropbox' # service to sync files
+cask 'google-chrome' # web browser
+cask 'obsidian' # note taking app
+cask 'readwise-ibooks' # sync ibook notes and highlights
+cask 'visual-studio-code' # text editor
+#cask 'nordvpn' # VPN client
+#cask 'spotify' # music player
 
 # K8
-brew 'colima'
-brew 'docker'
+brew 'colima' # docker on M1
+brew 'semgrep' # SAST tool
+brew 'docker' # container manager
+brew 'docker-compose'
+brew 'docker-credential-helper'
+brew 'node'
+brew 'nvm'
 brew 'kubectl'
+brew 'awscli'
+brew 'terraform'
+
+# Dev
+brew 'direnv'
+#tap 'sdkman/tap'
+#brew 'sdkman-cli'
+#brew 'golang'
