@@ -138,16 +138,17 @@ This instructs `rcup` to use _your_ files upon the next `rcup` run (see usage in
 
 ## FAQ
 
-### How do I remove the unessecary apps in the default dock?
+### How do I remove default apps in the default dock?
 
-To cleanup the dock I use the commandline tool `dockutil`:
+To cleanup the dock from the default apps use this command:
 ```
-brew install dockutil
-dockutil --remove all
+defaults write com.apple.dock persistent-apps -array
+killall Dock
 ```
-This will remove all the default apps in the dock. Now I can add apps that I find useful.
+This will remove all the default apps in the dock. Now you can add apps that you find actually useful.
 
-I personally store only a handful apps in the dock, because I use the search feature to open apps either with the built in Spotlight or 3rd party apps like [Alfred](https://www.alfredapp.com/).
+> [!NOTE]
+> I personally store only a handful apps in the dock and rather use the search feature to open apps, either with the built in Spotlight or 3rd party apps like [Alfred](https://www.alfredapp.com/). I generally try to keep the Dock as small as possible to avoid visual distraction.
 
 ### How do I install apps on macOS?
 
