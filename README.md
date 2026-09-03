@@ -2,12 +2,9 @@
 
 A set of opinionated configuration files for command line tools like vim, [zsh](http://www.zsh.org/), git etc.
 
-It uses pragmatic approaches like [zaw](https://github.com/zsh-users/zaw), [rcm](http://thoughtbot.github.io/rcm/) or [SpaceVim](https://spacevim.org/)
-to configure the command line environment as quickly as possible without fiddling too much with nitty gritty implementation details.
+The installation is tested on macOS 26.6 and subject to change without prior notice. Use at your own risk!
 
-The installation is tested on macOS 12.1 and subject to change without prior notice. Use at your own risk :)
-
-[![Build Status](https://travis-ci.com/ctrabold/dotfiles.svg?branch=master)](https://travis-ci.com/ctrabold/dotfiles)
+![Build Status](https://github.com/ctrabold/dotfiles/workflows/ci.yml/badge.svg?branch=main)
 
 ## Installation
 
@@ -25,7 +22,7 @@ xcode-select --install
 ```
 - Install required tools:
 ```
-brew bundle --no-lock --file $HOME/dotfiles/Brewfile
+brew bundle --file $HOME/dotfiles/Brewfile
 ```
 - Set `zsh` as your default login shell:
 ```
@@ -35,24 +32,25 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 ```
 git clone https://github.com/zsh-users/zaw.git $HOME/zaw
 ```
-- Link the symlink configuration file:
+- Setup local dotfiles repository:
 ```
-ln -s $HOME/dotfiles/rcrc $HOME/.rcrc
+chezmoi init https://github.com/ctrabold/dotfiles.git
+chezmoi diff
 ```
-- Verify the symlinks with this command: `lsrc`
+This command lists all files that are going to be created so you can review the setup before you apply the settings in the next step. Refer to the docs for more details: https://www.chezmoi.io/quick-start/
 
-This command lists all symlinks that are going to be created so you can review the setup before you apply the settings in the next step.
+- Verify the symlinks with this command: `chezmoi status`
 
 Once you're happy with the result go ahead and create the symlinks to each dotfile:
 ```
-rcup -v
+chezmoi apply -v
 ```
 You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
 - (optional): Install Oh-My-ZSH: https://ohmyz.sh/#install
 - (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
-- (optional): install additional apps: 
+- (optional): install additional apps by commenting out the line(s) in `Brewfile.apps` and then run: 
 ```
-brew bundle --no-lock --file $HOME/dotfiles/Brewfile.apps
+brew bundle --file $HOME/dotfiles/Brewfile.apps
 ```
 - (optional): Create a dedicated SSH key for work:
 ```
@@ -62,7 +60,7 @@ ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key
 ```
 vi ~/gitconfig.local
 
-[includeIf "gitdir:~/workspace/customer"]
+[includeIf "gitdir:~/workspace/vendor"]
    [user]
        email = "work_email@example.com"
    [core]
@@ -90,11 +88,9 @@ vi ~/gitconfig.local
 
 #### [tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
 
-* The `tmux` config file is a modified version of from [the tmux book](http://media.pragprog.com/titles/bhtmux/code/workflows/tmux.conf).
+* The `tmux` config file is a modified version from [the tmux book](http://media.pragprog.com/titles/bhtmux/code/workflows/tmux.conf).
 
 #### [vim](http://www.vim.org/) configuration:
-
-* The vim config is based on [SpaceVim](https://spacevim.org/).
 
 ## How do I customize the setup?
 
@@ -132,11 +128,6 @@ Your `~/.zshrc.local` might look like this:
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 ```
-You can also override the core files completely or add your own by storing them inside the `dotfiles-local` folder.
-
-This instructs `rcup` to use _your_ files upon the next `rcup` run (see usage instructions above).
-
-## FAQ
 
 ### How do I remove default apps in the default dock?
 
@@ -154,20 +145,18 @@ This will remove all the default apps in the dock. Now you can add apps that you
 
 This command installs the common tools I use on a regular basis:
 ```
-brew bundle --file=~/dotfiles/tag-darwin/homebrew/Brewfile
+brew bundle --file=~/dotfiles/Brewfile.apps
 ```
 
 ### How do I use a Node Package manager?
 
-The git setup of NVM provides the most straightforward solution in my opinion.
-
-It is described here: https://github.com/nvm-sh/nvm#git-install
-
-After that install the node version(s) you desire: `nvm install 12`
+I use `mise` as described here: https://mise.jdx.dev/lang/node.html
 
 ### How do I setup the Java environment?
 
-Use SDKMan and follow the installation step:
+Use `mise` as described here: https://mise.jdx.dev/lang/java.html
+
+Or use `SDKMan` and follow the installation step:
 ```
 curl -s "https://get.sdkman.io" | bash
 ```
