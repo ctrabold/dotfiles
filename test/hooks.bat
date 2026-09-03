@@ -8,25 +8,13 @@ load test_helper
   echo "$output" | grep tmp/home$
 }
 
-
-#
-# post-up
-#
-
-@test "Writes Mac OS X settings only on Mac OS X" {
-  OSTYPE="example" run ./hooks/post-up/mac-osx-settings.sh
-  [ "$status" -eq 1 ]
-  echo "$output" | grep "No Mac OS detected"
-}
-
-
 #
 # pre-up
 #
 
 @test "Creates folders to override dotfiles locally" {
   [ ! -d "${HOME}/dotfiles-local" ]
-  run ./hooks/pre-up/create-dotfiles-local-folder.sh
+  run bash .chezmoiscripts/run_before_00-install-pre-requisites.sh
   [ "$status" -eq 0 ]
   [ -d "${HOME}/dotfiles-local" ]
 }
