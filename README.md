@@ -15,6 +15,10 @@ The installation is tested on macOS 12.1 and subject to change without prior not
 ```
 git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
 ```
+- Install [Command Line Tools](https://developer.apple.com/documentation/xcode/installing-the-command-line-tools) without Xcode:
+```
+xcode-select --install
+```
 - Install [Homebrew](https://docs.brew.sh/Installation):
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
