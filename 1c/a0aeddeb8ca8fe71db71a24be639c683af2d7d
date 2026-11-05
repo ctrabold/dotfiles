@@ -1,0 +1,14 @@
+.github/workflows/ci.yml
+  h_1eab547fffd25d 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1ca0aeddeb8ca8fe71db71a24be639c683af2d7d",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
