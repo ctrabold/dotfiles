@@ -1,0 +1,14 @@
+.github/dependabot.yml
+  h_1eab547fffd25d 1-9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "44b6101fc0e9e7f492066bf22db2b3563dc62365",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
