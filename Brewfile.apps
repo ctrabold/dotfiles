@@ -1,34 +1,83 @@
-brew 'dive' # investigate docker images
-brew 'dockutil' # reset  mac doc on new (factory) installations
-brew 'rbenv' # ruby environment manager
-brew 'tig' # CLI git browser
-cask 'alfred' # Power Search Bar
-cask 'appcleaner' # remove apps for good
-cask 'camtasia' # record screencasts
-cask 'charles' # HTTP Proxy tool
-cask 'dash' # API docs browser
-cask 'dropbox' # service to sync files
-cask 'google-chrome' # web browser
-cask 'obsidian' # note taking app
-cask 'readwise-ibooks' # sync ibook notes and highlights
-cask 'visual-studio-code' # text editor
-#cask 'nordvpn' # VPN client
-#cask 'spotify' # music player
+#brew 'ack'
+#brew 'asciinema'
+#brew 'awscli'
+#brew 'bfg'
+#brew 'colima' # docker desktop alternative
+#brew 'coreutils' # Those that come with macOS are outdated
+#brew 'direnv'
+#brew 'dive' # investigate docker images
+#brew 'docker-compose'
+#brew 'docker-credential-helper'
+#brew 'docker' # container manager
+#brew 'duti'
+#brew 'ffmpeg' # convert audio and video codecs
+#brew 'gnu-tar'
+#brew 'htop-osx'
+#brew 'kubectl'
+#brew 'mas'
+#brew 'mp3splt' # split MP3 and Ogg Vorbis files
+#brew 'nikto'
+#brew 'nmap'
+#brew 'pstree'
+#brew 'pulumi'
+#brew 'pwgen'
+#brew 'rename'
+#brew 'rsync'
+#brew 'siege'
+#brew 'sleuthkit'
+#brew 'sloccount'
+#brew 'slowhttptest'
+#brew 'socat'
+#brew 'ssh-audit'
+#brew 'sslscan'
+#brew 'sslyze'
+#brew 'tcpflow'
+#brew 'tmux'
+#brew 'tree'
+#brew 'uncrustify'
+#brew 'watch'
+#brew 'yt-dlp'
+#brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+#cask 'alfred' # Power Search Bar
+#cask 'anki'
+#cask 'appcleaner' # remove apps for good
+#cask 'azure-cli'
+#cask 'caffeine'
+#cask 'calibre'
+#cask 'camtasia' # record screencasts
+#cask 'discord'
+#cask 'drawio'
+#cask 'dropbox'
+#cask 'firefox'
+#cask 'flameshot' # Screenshot software
+#cask 'ghostty' # Terminal emulator
+#cask 'google-chrome' # web browser
+#cask 'google-drive'
+#cask 'handbrake'
+#cask 'imageoptim'
+#cask 'jetbrains-toolbox'
+#cask 'keycastr'
+#cask 'launchcontrol'
+#cask 'numi'
+#cask 'obsidian' # note taking app
+#cask 'postico'
+#cask 'screenflow'
+#cask 'scrivener'
+#cask 'sequel-pro'
+#cask 'slack'
+#cask 'telegram'
+#cask 'the-unarchiver'
+#cask 'thunderbird'
+#cask 'timescribe' # Time tracking
+#cask 'vagrant'
+#cask 'visual-studio-code' # text editor
+#cask 'vlc'
+#cask 'zoom'
 
-# K8
-brew 'colima' # docker on M1
-brew 'semgrep' # SAST tool
-brew 'docker' # container manager
-brew 'docker-compose'
-brew 'docker-credential-helper'
-brew 'node'
-brew 'nvm'
-brew 'kubectl'
-brew 'awscli'
-brew 'terraform'
-
-# Dev
-brew 'direnv'
-#tap 'sdkman/tap'
-#brew 'sdkman-cli'
-#brew 'golang'
+#mas 'Day One Classic', id: 422304217
+#mas 'Integrity', id: 513610341
+#mas 'iThoughtsX', id: 720669838
+#mas 'Monodraw', id: 920404675
+#mas 'Monosnap', id: 540348655
+#mas 'Name Mangler', id: 402434720
+#mas 'Xcode', id: 497799835
