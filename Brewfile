@@ -10,6 +10,7 @@ brew 'git-lfs'
 brew 'git-sizer'
 #brew 'jpegoptim'
 brew 'slides'
+brew 'topgrade' # @see https://github.com/topgrade-rs/topgrade
 brew 'wget'
 brew 'zsh'
 brew 'uv'
