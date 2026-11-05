@@ -1,0 +1,7 @@
+# $HOME/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
+# @see https://ghostty.org/docs/config#file-location
+copy-on-select = clipboard
+focus-follows-mouse = true
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
+window-inherit-font-size = true
