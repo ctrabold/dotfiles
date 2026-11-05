@@ -1,8 +1,0 @@
-os:
-  - linux
-  - osx
-
-install: true
-
-script:
-  - bash ./release.sh
