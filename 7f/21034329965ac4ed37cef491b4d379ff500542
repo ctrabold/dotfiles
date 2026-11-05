@@ -1,0 +1,14 @@
+README.md
+  h_1eab547fffd25d 35,37-38,46
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7f21034329965ac4ed37cef491b4d379ff500542",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
