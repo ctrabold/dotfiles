@@ -1,0 +1,19 @@
+Brewfile
+  h_1eab547fffd25d 8
+Brewfile.apps
+  h_1eab547fffd25d 1-8,36-157
+config/mise/config.toml
+  h_1eab547fffd25d 4,6-9,11-23
+  h_1eab547fffd25d 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4b53c1ef648d2da2e902e6c9b39d06623dc95b61",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
