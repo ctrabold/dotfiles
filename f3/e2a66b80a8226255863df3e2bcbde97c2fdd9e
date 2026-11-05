@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f3e2a66b80a8226255863df3e2bcbde97c2fdd9e",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
