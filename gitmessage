@@ -8,3 +8,9 @@
 # * Are there any side effects?
 #
 # Include a link to the ticket, if any.
+# @see https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls
+#
+# Example Co-Authors
+# Co-authored-by: NAME <NAME@EXAMPLE.COM>
+# Co-authored-by: ANOTHER-NAME <ANOTHER-NAME@EXAMPLE.COM>"
+# Co-authored-by: Copilot <copilot@github.com>
