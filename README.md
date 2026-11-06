@@ -48,7 +48,11 @@ chezmoi apply -v
 You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
 - (optional): Install Oh-My-ZSH: https://ohmyz.sh/#install
 - (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
-- (optional): install additional apps by commenting out the line(s) in `Brewfile.apps` and then run: 
+- (optional): install additional apps via mise with this command:
+```shell
+mise install
+```
+- (optional): install additional apps by commenting out the line(s) in `Brewfile.apps` and then run:
 ```
 brew bundle --file $HOME/dotfiles/Brewfile.apps
 ```
