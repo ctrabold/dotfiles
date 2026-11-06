@@ -1,0 +1,17 @@
+README.md
+  h_1eab547fffd25d 7,148,153,157,159
+  h_1eab547fffd25d 91,158
+LICENSE
+  h_1eab547fffd25d 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9a0c8e9ca54f114fffbc4233e41f9055548969d7",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
