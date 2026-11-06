@@ -71,6 +71,29 @@ vi ~/gitconfig.local
        sshCommand = "ssh -i ~/.ssh/work_key"
 ```
 
+## Known issues
+
+### Vim: Solarized Theme needs patching
+
+The colors do not work without patching the color theme.
+
+Fix Solarized issue with this approach:
+
+```shell
+git clone https://codeberg.org/lifepillar/vim-solarized8.git \
+    ~/.vim/janus/vim/colors/vim-solarized8
+```
+See https://codeberg.org/lifepillar/vim-solarized8 for more details on that issue.
+
+## Vim: Janus tlib.vim needs patching
+
+The issue is described here: https://github.com/carlhuda/janus/issues/716
+
+```shell
+cd ~/.vim/janus/vim/tools
+git submodule update --remote tlib
+```
+
 ## FAQ
 
 ### What's in it?
