@@ -1,0 +1,14 @@
+LICENSE
+  h_1eab547fffd25d 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6bc8f42b7a8e9eb72cd64e7371cd4855de4ab295",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
