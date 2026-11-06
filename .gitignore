@@ -1,3 +1,4 @@
 bin/
 secret*
 tmp/
+Brewfile.local
