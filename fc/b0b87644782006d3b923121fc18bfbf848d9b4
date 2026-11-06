@@ -1,0 +1,19 @@
+dot_bashrc
+  h_1eab547fffd25d 1-9
+README.md
+  h_1eab547fffd25d 40
+  h_1eab547fffd25d 42
+test/hooks.bat
+  h_1eab547fffd25d 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "fcb0b87644782006d3b923121fc18bfbf848d9b4",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
