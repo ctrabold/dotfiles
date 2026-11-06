@@ -1,0 +1,14 @@
+config/mise/config.toml
+  h_1eab547fffd25d 1-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7c9e926a817698c1332a1cd811a9897c82e97b2f",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
