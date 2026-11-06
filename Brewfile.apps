@@ -12,7 +12,7 @@
 #brew 'duti'
 #brew 'ffmpeg' # convert audio and video codecs
 #brew 'gnu-tar'
-#brew 'htop-osx'
+#brew 'htop'
 #brew 'kubectl'
 #brew 'mas'
 #brew 'mp3splt' # split MP3 and Ogg Vorbis files
