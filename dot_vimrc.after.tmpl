@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "darwin" }}
 let g:solarized_termcolors=16
 let g:NERDTreeWinSize = 40
 
@@ -17,4 +18,13 @@ filetype plugin indent on
 
 " @see https://stackoverflow.com/questions/14635295/vim-takes-a-very-long-time-to-start-up
 set clipboard=exclude:.*
+{{ else if eq .chezmoi.os "linux" }}
+let g:solarized_termcolors=16
+let g:NERDTreeWinSize = 40
 
+set t_Co=16
+set showtabline=2
+
+syntax enable
+filetype plugin indent on
+{{ end }}
