@@ -39,6 +39,7 @@
 #brew 'yt-dlp'
 #brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #cask '1password' # Password manager
+#cask '1password-cli' # Password manager CLI
 #cask 'alfred' # Power Search Bar
 #cask 'anki'
 #cask 'appcleaner' # remove apps for good
