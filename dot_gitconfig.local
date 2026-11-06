@@ -6,7 +6,13 @@
 [user]
   name = Christian Trabold
   email = christian.trabold+codes@gmail.com
-  signingkey = 9295890A
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJvXJ5DFt0/fSZt2UQmJpllZaBFCQAtHzDXxyqKjaA9d
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
 
 # @see https://difftastic.wilfred.me.uk/git.html#regular-usage
 #[diff]
