@@ -38,7 +38,7 @@
 #brew 'watch'
 #brew 'yt-dlp'
 #brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#cask '1password' # Power Search Bar
+#cask '1password' # Password manager
 #cask 'alfred' # Power Search Bar
 #cask 'anki'
 #cask 'appcleaner' # remove apps for good
