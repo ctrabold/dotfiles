@@ -1,0 +1,14 @@
+Brewfile.apps
+  h_1eab547fffd25d 41,62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "20fe0a68414b289d732071b7ce1b907e4f15d50a",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
