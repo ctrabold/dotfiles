@@ -1,0 +1,14 @@
+config/ghostty/config
+  h_1eab547fffd25d 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1a83546c9e18290424db8ad71e8145acc6608c1d",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+dot_gitmessage
+  h_1eab547fffd25d 11-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9ffbdb8fdf615671ebf3b6b3cde37e0d5114339f",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
