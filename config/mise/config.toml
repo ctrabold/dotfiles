@@ -25,6 +25,7 @@ terraform = "1.16.4"
 terragrunt = "1.1.6"
 tflint = "0.65.0"
 uv = "latest"
+rush = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]
