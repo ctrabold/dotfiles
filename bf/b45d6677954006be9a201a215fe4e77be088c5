@@ -1,0 +1,14 @@
+dot_vimrc.after.tmpl
+  h_1eab547fffd25d 1,21-26,28-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bfb45d6677954006be9a201a215fe4e77be088c5",
+  "prompts": {},
+  "humans": {
+    "h_1eab547fffd25d": {
+      "author": "Christian Trabold <christian.trabold+codes@gmail.com>"
+    }
+  }
+}
