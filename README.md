@@ -52,10 +52,12 @@ You can safely run this command multiple times to update the symlinks e.g. if yo
 ```shell
 mise install
 ```
-- (optional): install additional apps by commenting out the line(s) in `Brewfile.apps` and then run:
+- (optional): install additional apps by copying `Brewfile.apps` and comment out the line(s) in `Brewfile.local` and then run:
+```shell
+cp Brewfile.apps Brewfile.local
+brew bundle --file $HOME/dotfiles/Brewfile.local
 ```
-brew bundle --file $HOME/dotfiles/Brewfile.apps
-```
+Local changes are ignored from version control.
 - (optional): Create a dedicated SSH key for work:
 ```
 ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key
