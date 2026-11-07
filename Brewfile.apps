@@ -11,6 +11,7 @@
 #brew 'docker' # container manager
 #brew 'duti'
 #brew 'ffmpeg' # convert audio and video codecs
+#brew 'gh' # GitHub command-line tool
 #brew 'gnu-tar'
 #brew 'htop'
 #brew 'kubectl'
