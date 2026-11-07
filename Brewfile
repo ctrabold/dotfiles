@@ -8,6 +8,7 @@ brew 'git-sizer'
 brew 'git-tig'
 brew 'git'
 brew 'mise'
+brew 'neovim'
 brew 'topgrade' # @see https://github.com/topgrade-rs/topgrade
 brew 'vim'
 brew 'wget'
