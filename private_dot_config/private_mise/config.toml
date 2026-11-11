@@ -1,31 +1,46 @@
 # @see https://mise.jdx.dev/configuration.html#global-config
 [tools]
-actionlint = "latest"
-action-validator = "0.9.0"
-adr-tools = "latest"
+action-validator = "0.9.0" # Tool to validate GitHub Action and Workflow YAML files
+actionlint = "latest" # Static checker for GitHub Actions workflow files
+adr-tools = "latest" # CLI tool for working with Architecture Decision Records
 bat = "0.26.1"
 bats = "1.14.0"
-conftest = "0.71.1"
-dependency-check = "13.0.0"
+code-review-graph = "latest"
+conftest = "0.71.1" # Test your configuration files using Open Policy Agent
+dagu = "latest" # Lightweight and powerful workflow engine
+dependency-check = "13.0.0" # OWASP dependency-check
+ghalint = "latest" # GitHub Actions linter
+git-cliff = "latest"
+git-filter-repo = "latest"
 go = "1.27"
+gron = "latest"
 hadolint = "2.15.1"
-hugo = "0.169.0"
-imagemagick = "7.1.2_31"
+hugo = "0.169.0" # Configurable static site generator
+imagemagick = "7.1.2_31" # Tools and libraries to manipulate images in select formats
 jq = "1.8.2"
 mkcert = "latest"
 node = "24.21.0"
+opengrep = "latest"
 pre-commit = "4.7.0"
 prettier = "latest"
 python = "3.13"
+regal = "latest"
 ruby = "latest"
+rumdl = "latest" # Markdown Linter and Formatter written in Rust
+rush = "latest"
 rust = "latest"
 semgrep = "1.183.0"
-shellcheck = "0.11.0"
+shellcheck = "0.11.0" # Static analysis and lint tool, for (ba)sh scripts
+shfmt = "latest"
+syft = "latest" # CLI for generating a Software Bill of Materials from container images
 terraform = "1.16.4"
 terragrunt = "1.1.6"
+terrascan = "latest" # Detect compliance and security violations across Infrastructure as Code
 tflint = "0.65.0"
+tokei = "latest" # Count your code, quickly
 uv = "latest"
-rush = "latest"
+yq = "latest" # yq is a portable command-line YAML processor
+zizmor = "latest" # Static analysis for GitHub Actions
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]

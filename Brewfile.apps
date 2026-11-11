@@ -1,24 +1,49 @@
 #brew 'ack'
+#brew 'act' # Run your GitHub Actions locally
+#brew 'activitywatch' # Free Open-Source Time Tracker
+#brew 'asciidoctor' # Text processor and publishing toolchain for AsciiDoc
 #brew 'asciinema'
 #brew 'awscli'
+#brew 'awsdac' # CLI tool for drawing AWS architecture
 #brew 'bfg'
+#brew 'brave-browser' # Web browser focusing on privacy
+#brew 'buildkit' # Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+#brew 'c7n' # Cloud Custodian Rules engine for cloud security, cost optimization, and governance
+#brew 'claude-code'
 #brew 'colima' # docker desktop alternative
+#brew 'comfy' # Node-based image, video and audio generator
+#brew 'container' # Create and run Linux containers using lightweight virtual machines
+#brew 'copilot-cli' # Brings the power of Copilot coding agent directly to your terminal
 #brew 'coreutils' # Those that come with macOS are outdated
+#brew 'cyberduck' # Server and cloud storage browser
+#brew 'd2' # Modern diagram scripting language that turns text to diagrams
 #brew 'direnv'
 #brew 'dive' # investigate docker images
-#brew 'docker-compose'
-#brew 'docker-credential-helper'
+#brew 'docker-buildx' # Docker CLI plugin for extended build capabilities with BuildKit
+#brew 'docker-compose' # Isolated development environments using Docker
+#brew 'docker-credential-helper' # Platform keystore credential helper for Docker
 #brew 'docker' # container manager
 #brew 'duti'
+#brew 'exiftool' # Perl lib for reading and writing EXIF metadata
 #brew 'ffmpeg' # convert audio and video codecs
+#brew 'floci-io/floci/floci', trusted: true # Official CLI for the Floci local AWS emulator
 #brew 'gh' # GitHub command-line tool
 #brew 'gnu-tar'
-#brew 'htop'
-#brew 'kubectl'
+#brew 'graphviz' # Graph visualization software from AT&T and Bell Labs
+#brew 'inframap' # Read your tfstate or HCL to generate a graph
+#brew 'ipcalc' # Calculate various network masks, etc. from a given IP address
+#brew 'jpegoptim'
+#brew 'jscpd' # Copy/paste detector fncduor programming source code
 #brew 'mas'
+#brew 'mas'
+#brew 'mkcert' # Simple tool to make locally trusted development certificates
 #brew 'mp3splt' # split MP3 and Ogg Vorbis files
+#brew 'ncdu' # NCurses Disk Usage
 #brew 'nikto'
 #brew 'nmap'
+#brew 'openspec' # Spec-driven development (SDD) for AI coding assistants
+#brew 'parallel' # Shell command parallelization utility (evaluate https://github.com/shenwei356/rush instead)
+#brew 'pinact' # Pins GitHub Actions to full hashes and versions
 #brew 'pstree'
 #brew 'pulumi'
 #brew 'pwgen'
@@ -29,61 +54,82 @@
 #brew 'sloccount'
 #brew 'slowhttptest'
 #brew 'socat'
+#brew 'socktainer' # Docker-compatible REST API on top of Apple container
+#brew 'speedtest-cli'
 #brew 'ssh-audit'
 #brew 'sslscan'
 #brew 'sslyze'
+#brew 'starship' # Cross-shell prompt for astronauts
+#brew 'stern' # Tail multiple Kubernetes pods & their containers
+#brew 'structurizr-cli' # Command-line utility for Structurizr
+#brew 'structurizr' # Software architecture models as code
 #brew 'tcpflow'
+#brew 'tcping' # TCP connect to the given IP/port combo
 #brew 'tmux'
-#brew 'tree'
 #brew 'uncrustify'
-#brew 'watch'
+#brew 'unsloth' # desktop app to run and train AI models
+#brew 'webp' # Image format providing lossless and lossy compression for web images
+#brew 'xmlstarlet' # XML command-line utilities
+#brew 'yap' # On-device audio transcription using Speech.framework
 #brew 'yt-dlp'
 #brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-#cask '1password' # Password manager
 #cask '1password-cli' # Password manager CLI
+#cask '1password' # Password manager
 #cask 'alfred' # Power Search Bar
 #cask 'anki'
 #cask 'appcleaner' # remove apps for good
 #cask 'azure-cli'
 #cask 'caffeine'
 #cask 'calibre'
-#cask 'camtasia' # record screencasts
+#cask 'camtasia' # Screen recorder and video editor
+#cask 'ccmenu' # Application to monitor continuous integration servers
+#cask 'codeql'
 #cask 'discord'
-#cask 'drawio'
-#cask 'dropbox'
-#cask 'firefox'
+#cask 'drawio' # Online diagram software
+#cask 'dropbox' # Client for the Dropbox cloud storage service
+#cask 'firefox' # Web browser
 #cask 'flameshot' # Screenshot software
+#cask 'fliqlo' # Flip clock screensaver
 #cask 'ghostty' # Terminal emulator
-#cask 'google-chrome' # web browser
+#cask 'gogs' # Self-hosted Git service (great for demos)
+#cask 'google-chrome' # Web browser
 #cask 'google-drive'
 #cask 'handbrake'
-#cask 'imageoptim'
-#cask 'jetbrains-toolbox'
+#cask 'imageoptim' # Tool to optimise images to a smaller size
+#cask 'iterm2' # Terminal emulator as alternative to Apple's Terminal app
+#cask 'jetbrains-toolbox' # JetBrains tools manager
 #cask 'keycastr'
 #cask 'launchcontrol'
-#cask 'microsoft-teams'
+#cask 'lm-studio' # Discover, download, and run local LLMs
+#cask 'maestro' # AI agent command center
+#cask 'microsoft-teams' # Meet, chat, call, and collaborate in just one place
+#cask 'monodraw' # Tool to create text-based art (use AppStore version)
+#cask 'mstystudio' # AI platform with local and online models
 #cask 'numi'
+#cask 'obsidian' # Knowledge base that works on top of a local folder of plain text Markdown files
 #cask 'ollama'
 #cask 'opencode'
-#cask 'obsidian' # note taking app
 #cask 'postico'
 #cask 'screenflow'
 #cask 'scrivener'
 #cask 'sequel-pro'
+#cask 'silicon' # Render source code as image
 #cask 'slack'
+#cask 'snowflake-snowsql' # Command-line client for connecting to Snowflake
 #cask 'telegram'
 #cask 'the-unarchiver'
 #cask 'thunderbird'
 #cask 'timescribe' # Time tracking
 #cask 'vagrant'
 #cask 'visual-studio-code' # text editor
-#cask 'vlc'
-#cask 'zoom'
-
+#cask 'vivaldi' # Web browser with built-in email client focusing on customization and control
+#cask 'vlc' # Multimedia player
+#cask 'zoom' # Video communication and virtual meeting platform
 #mas 'Day One Classic', id: 422304217
 #mas 'Integrity', id: 513610341
 #mas 'iThoughtsX', id: 720669838
-#mas 'Monodraw', id: 920404675
+#mas 'Monodraw', id: 920404675 # Tool to create text-based art
 #mas 'Monosnap', id: 540348655
 #mas 'Name Mangler', id: 402434720
 #mas 'Xcode', id: 497799835
+#uv 'datacontract-cli[all]'
