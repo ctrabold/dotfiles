@@ -1,0 +1,6 @@
+.oh-my-zsh/cache
+*.md
+*.sh
+*.txt
+LICENSE
+README.md
