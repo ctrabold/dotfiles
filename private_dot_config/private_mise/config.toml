@@ -45,6 +45,7 @@ zizmor = "latest" # Static analysis for GitHub Actions
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]
 trusted_config_paths = ["~/workspace"]
+python.uv_venv_auto = true
 
 [settings.status]
 show_env = false
