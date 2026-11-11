@@ -28,13 +28,11 @@
 #brew 'ffmpeg' # convert audio and video codecs
 #brew 'floci-io/floci/floci', trusted: true # Official CLI for the Floci local AWS emulator
 #brew 'gh' # GitHub command-line tool
-#brew 'gnu-tar'
 #brew 'graphviz' # Graph visualization software from AT&T and Bell Labs
 #brew 'inframap' # Read your tfstate or HCL to generate a graph
 #brew 'ipcalc' # Calculate various network masks, etc. from a given IP address
 #brew 'jpegoptim'
 #brew 'jscpd' # Copy/paste detector fncduor programming source code
-#brew 'mas'
 #brew 'mas'
 #brew 'mkcert' # Simple tool to make locally trusted development certificates
 #brew 'mp3splt' # split MP3 and Ogg Vorbis files
@@ -44,11 +42,7 @@
 #brew 'openspec' # Spec-driven development (SDD) for AI coding assistants
 #brew 'parallel' # Shell command parallelization utility (evaluate https://github.com/shenwei356/rush instead)
 #brew 'pinact' # Pins GitHub Actions to full hashes and versions
-#brew 'pstree'
 #brew 'pulumi'
-#brew 'pwgen'
-#brew 'rename'
-#brew 'rsync'
 #brew 'siege'
 #brew 'sleuthkit'
 #brew 'sloccount'
@@ -72,7 +66,6 @@
 #brew 'xmlstarlet' # XML command-line utilities
 #brew 'yap' # On-device audio transcription using Speech.framework
 #brew 'yt-dlp'
-#brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #cask '1password-cli' # Password manager CLI
 #cask '1password' # Password manager
 #cask 'alfred' # Power Search Bar
