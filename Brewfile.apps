@@ -63,6 +63,8 @@
 #cask 'launchcontrol'
 #cask 'microsoft-teams'
 #cask 'numi'
+#cask 'ollama'
+#cask 'opencode'
 #cask 'obsidian' # note taking app
 #cask 'postico'
 #cask 'screenflow'
