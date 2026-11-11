@@ -4,6 +4,7 @@ alias history='fc -il 1'
 alias hosts='vim /etc/hosts'
 alias mkdir='mkdir -p'
 alias ping='ping -a'
+alias ll='ls -lah'
 
 # Git
 alias gl='git l'
