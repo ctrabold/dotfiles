@@ -19,7 +19,7 @@ xcode-select --install
 - Install required tools:
 ```
 mise install
-brew bundle --file $HOME/dotfiles/Brewfile
+brew bundle --file $HOME/Brewfile
 ```
 - Set `zsh` as your default login shell:
 ```
@@ -27,7 +27,7 @@ sudo chsh -s "$(command -v zsh)" "${USER}"
 ```
 - Setup local dotfiles repository & dependencies:
 ```
-chezmoi init https://github.com/ctrabold/dotfiles.git
+chezmoi init https://github.com/ctrabold/dotfiles.git --branch v2
 chezmoi diff
 ```
 This command lists all files that are going to be created so you can review the setup before you apply the settings in the next step. Refer to the docs for more details: https://www.chezmoi.io/quick-start/
@@ -42,8 +42,8 @@ You can safely run this command multiple times to update the symlinks e.g. if yo
 - (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
 - (optional): install additional apps by copying `Brewfile.apps` and comment out the line(s) in `Brewfile.local` and then run:
 ```shell
-cp Brewfile.apps Brewfile.local
-brew bundle --file $HOME/dotfiles/Brewfile.local
+cp $HOME/Brewfile.apps $HOME/Brewfile.local
+brew bundle --file $HOME/Brewfile.local
 ```
 Local changes are ignored from version control.
 - (optional): Create a dedicated SSH key for work:
@@ -97,8 +97,8 @@ git submodule update --remote tlib
 
 #### Handy shell aliases and functions
 
-* `~/dotfiles/zsh/aliases.zsh`
-* `~/dotfiles/zsh/functions.zsh`
+* `~/zsh/aliases.zsh`
+* `~/zsh/functions.zsh`
 
 #### [tmux](http://robots.thoughtbot.com/a-tmux-crash-course) configuration:
 
@@ -159,7 +159,7 @@ This will remove all the default apps in the dock. Now you can add apps that you
 
 This command installs the common tools I use on a regular basis:
 ```
-brew bundle --file=~/dotfiles/Brewfile.apps
+brew bundle --file=~/Brewfile.apps
 ```
 
 ### How do I use a Node Package manager?
