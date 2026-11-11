@@ -8,10 +8,6 @@ The installation is tested on macOS 26.6 and subject to change without prior not
 
 ## Installation
 
-- Clone the `dotfiles` repo to your HOME folder:
-```
-git clone https://github.com/ctrabold/dotfiles.git $HOME/dotfiles
-```
 - Install [Command Line Tools](https://developer.apple.com/documentation/xcode/installing-the-command-line-tools) without Xcode:
 ```
 xcode-select --install
@@ -22,17 +18,14 @@ xcode-select --install
 ```
 - Install required tools:
 ```
+mise install
 brew bundle --file $HOME/dotfiles/Brewfile
 ```
 - Set `zsh` as your default login shell:
 ```
 sudo chsh -s "$(command -v zsh)" "${USER}"
 ```
-- Clone `zaw` repo to your HOME folder:
-```
-git clone https://github.com/zsh-users/zaw.git $HOME/zaw
-```
-- Setup local dotfiles repository:
+- Setup local dotfiles repository & dependencies:
 ```
 chezmoi init https://github.com/ctrabold/dotfiles.git
 chezmoi diff
@@ -46,12 +39,7 @@ Once you're happy with the result go ahead and create the symlinks to each dotfi
 chezmoi apply -v
 ```
 You can safely run this command multiple times to update the symlinks e.g. if you add more dotfiles to the `dotfiles` folder later.
-- (optional): Install Oh-My-ZSH: https://ohmyz.sh/#install
 - (optional): install Janus Vim Setup: https://github.com/carlhuda/janus#installation
-- (optional): install additional apps via mise with this command:
-```shell
-mise install
-```
 - (optional): install additional apps by copying `Brewfile.apps` and comment out the line(s) in `Brewfile.local` and then run:
 ```shell
 cp Brewfile.apps Brewfile.local

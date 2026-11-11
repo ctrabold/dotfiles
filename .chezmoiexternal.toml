@@ -1,0 +1,15 @@
+# @see https://www.chezmoi.io/reference/special-files/chezmoiexternal-format/#__tabbed_1_1
+[".oh-my-zsh"]
+    type = "archive"
+    url = "https://github.com/ohmyzsh/ohmyzsh/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+[".zaw"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zaw.git"
+    refreshPeriod = "168h"
+[".vim/janus/vim/colors/vim-solarized8"]
+    type = "git-repo"
+    url = "https://codeberg.org/lifepillar/vim-solarized8.git"
+    refreshPeriod = "168h"
