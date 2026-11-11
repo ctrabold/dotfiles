@@ -1,1 +1,3 @@
-[[ -f /opt/homebrew/bin/mise ]] && eval "$(/opt/homebrew/bin/mise activate zsh)"
+if command -v mise &> /dev/null; then
+    eval "$(mise activate zsh)"
+fi
