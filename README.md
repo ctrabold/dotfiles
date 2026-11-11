@@ -55,10 +55,7 @@ ssh-keygen -t ed25519 -C "work_email@example.com" -f ~/.ssh/work_key
 vi ~/gitconfig.local
 
 [includeIf "gitdir:~/workspace/vendor"]
-   [user]
-       email = "work_email@example.com"
-   [core]
-       sshCommand = "ssh -i ~/.ssh/work_key"
+    path = ~/.gitconfig.work
 ```
 
 ## Known issues
