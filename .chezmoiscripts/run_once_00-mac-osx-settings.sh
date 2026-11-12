@@ -147,6 +147,9 @@ defaults write com.apple.Terminal FocusFollowsMouse -string true
 # the Dock to launch apps.
 #defaults write com.apple.dock persistent-apps -array
 
+# Move Dock to the left edge
+defaults write com.apple.dock orientation -string left
+
 # Automatically Hide
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
