@@ -60,3 +60,5 @@
 	defaultBranch = main
 [pack]
 	threads = 1
+[ghq]
+    root = ~/workspace

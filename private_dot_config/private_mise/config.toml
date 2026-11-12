@@ -41,6 +41,7 @@ tokei = "latest" # Count your code, quickly
 uv = "latest"
 yq = "latest" # yq is a portable command-line YAML processor
 zizmor = "latest" # Static analysis for GitHub Actions
+ghq = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "python"]
