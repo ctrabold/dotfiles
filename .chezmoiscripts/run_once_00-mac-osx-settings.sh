@@ -85,7 +85,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Set blazing fast key repeat rate
 # (KeyRepeat: 1 = ~15ms; InitialKeyRepeat: 10 = ~150ms)
 defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 6
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 ###############################################################################
 # Keyboard                                                                    #
