@@ -26,6 +26,7 @@ plugins=(
   git
   kubectl
   kube-ps1
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -43,4 +44,3 @@ export ARCHFLAGS="-arch x86_64"
 # Load additional files
 [[ -f $HOME/.secrets ]] && source $HOME/.secrets
 [[ -f $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
-[[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]] && source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh

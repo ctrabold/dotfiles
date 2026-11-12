@@ -26,7 +26,6 @@ brew 'tree'
 brew 'vim'
 brew 'watch'
 brew 'wget'
-brew 'zsh-autosuggestions' # .zshrc -> source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 brew 'zsh'
 cask 'font-bitter'
 cask 'font-meslo-lg-nerd-font'
